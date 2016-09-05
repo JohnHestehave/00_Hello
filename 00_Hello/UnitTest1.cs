@@ -17,4 +17,16 @@ namespace _00_Hello
             Assert.AreEqual("hello, Fred", Functions.Hello("Fred"));
         }
     }
+
+	internal class Functions
+	{
+		public static String Hello()
+		{
+			return "hello";
+		}
+		public static String Hello(String i)
+		{
+			return "hello, "+i;
+		}
+	}
 }
